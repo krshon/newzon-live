@@ -1210,3 +1210,12 @@ img {
   }
 }
 
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff9800;
+}

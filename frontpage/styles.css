@@ -1219,3 +1219,38 @@ a:visited {
 a:hover {
   color: #ff9800;
 }
+.news-title-link,
+.news-title-link:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.news-title-link:hover {
+  color: #ff9800;
+}
+/* ===== FORCE LINK COLORS (FINAL OVERRIDE) ===== */
+
+/* Global safety */
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+/* News article title links */
+.news-title-link,
+.news-title-link:link,
+.news-title-link:visited,
+.news-title-link:hover,
+.news-title-link:active {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+/* Hover effect only */
+.news-title-link:hover {
+  color: #ff9800 !important;
+}

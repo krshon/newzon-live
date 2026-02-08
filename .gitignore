@@ -21,4 +21,5 @@ dist/
 build/
 
 server.js
+mocknews.js
 

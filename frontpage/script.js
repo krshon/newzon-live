@@ -1,3 +1,15 @@
+const IS_LOCAL = location.hostname === "localhost" || location.hostname === "127.0.0.1";
+
+let data;
+
+if (IS_LOCAL) {
+  const module = await import("./mockNews.js");
+  data = module.mockNews;
+} else {
+  const res = await fetch("/api/news");
+  data = await res.json();
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.querySelector(".news-section");
 
